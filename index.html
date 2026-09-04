@@ -1,0 +1,1981 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Masterlock | Locação de Veículos e Frotas</title>
+
+    <meta
+        name="description"
+        content="Locação de veículos, pick-ups, SUVs, máquinas, embarcações e transporte em Rondônia."
+    >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+
+<!-- =========================================================
+     HEADER
+========================================================= -->
+
+<header class="header">
+
+    <div class="container header-inner">
+
+        <a href="#inicio" class="logo">
+
+            <div class="logo-text">
+                Master<span>lock</span>
+            </div>
+
+            <div class="logo-mark">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+        </a>
+
+        <nav class="nav" id="nav">
+
+            <a href="#inicio">Início</a>
+            <a href="#frota">Veículos</a>
+            <a href="#como-funciona">Como funciona</a>
+            <a href="#empresas">Empresas</a>
+            <a href="#contato">Contato</a>
+
+        </nav>
+
+        <div class="header-actions">
+
+            <button
+                class="btn-client"
+                id="btnAreaCliente"
+                type="button"
+            >
+                <svg viewBox="0 0 24 24">
+                    <circle cx="12" cy="8" r="4"></circle>
+                    <path d="M5 21c1-5 4-7 7-7s6 2 7 7"></path>
+                </svg>
+
+                Área do cliente
+            </button>
+
+            <button
+                class="mobile-menu"
+                id="mobileMenu"
+                type="button"
+                aria-label="Abrir menu"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<main>
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<section class="hero" id="inicio">
+
+    <div class="hero-glow glow-one"></div>
+    <div class="hero-glow glow-two"></div>
+
+    <div class="container hero-grid">
+
+        <div class="hero-copy">
+
+            <div class="hero-badge">
+                <span class="status-dot"></span>
+                SOLUÇÕES EM LOCAÇÃO DE VEÍCULOS E FROTAS
+            </div>
+
+            <h1>
+                O veículo certo para
+                <span>cada necessidade.</span>
+            </h1>
+
+            <p>
+                Locação de carros, pick-ups, SUVs, veículos especiais,
+                máquinas, embarcações, vans e ônibus para pessoas e empresas.
+            </p>
+
+            <div class="hero-benefits">
+
+                <div>
+                    <span class="check">✓</span>
+                    Frota diversificada
+                </div>
+
+                <div>
+                    <span class="check">✓</span>
+                    Reserva online
+                </div>
+
+                <div>
+                    <span class="check">✓</span>
+                    Atendimento personalizado
+                </div>
+
+            </div>
+
+            <div class="hero-contact">
+
+                <span>Atendimento Masterlock</span>
+
+                <strong>
+                    (69) 99928-7747
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <!-- BUSCA -->
+
+        <div class="booking-card">
+
+            <div class="booking-header">
+
+                <div>
+
+                    <span class="small-tag">
+                        RESERVE ONLINE
+                    </span>
+
+                    <h2>
+                        Encontre seu veículo
+                    </h2>
+
+                    <p>
+                        Informe onde e quando deseja realizar a locação.
+                    </p>
+
+                </div>
+
+                <div class="booking-icon">
+
+                    <svg viewBox="0 0 24 24">
+                        <path d="M5 17h14M6.5 17v2M17.5 17v2M4 13l2.2-5A2 2 0 0 1 8 7h8a2 2 0 0 1 2 1l2 5M5 13h14v4H5z"></path>
+                    </svg>
+
+                </div>
+
+            </div>
+
+
+            <form id="formBusca">
+
+                <div class="field">
+
+                    <label for="localRetirada">
+                        Local de retirada
+                    </label>
+
+                    <select id="localRetirada" required>
+
+                        <option value="">
+                            Selecione a unidade
+                        </option>
+
+                        <option value="Ouro Preto do Oeste - RO">
+                            Ouro Preto do Oeste - RO
+                        </option>
+
+                        <option value="Porto Velho - RO">
+                            Porto Velho - RO
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <label class="switch-row">
+
+                    <input
+                        id="outroLocal"
+                        type="checkbox"
+                    >
+
+                    <span class="switch-control"></span>
+
+                    <span>
+                        Devolver em outra unidade
+                    </span>
+
+                </label>
+
+
+                <div
+                    class="field hidden"
+                    id="campoLocalDevolucao"
+                >
+
+                    <label for="localDevolucao">
+                        Local de devolução
+                    </label>
+
+                    <select id="localDevolucao">
+
+                        <option value="">
+                            Selecione a unidade
+                        </option>
+
+                        <option value="Ouro Preto do Oeste - RO">
+                            Ouro Preto do Oeste - RO
+                        </option>
+
+                        <option value="Porto Velho - RO">
+                            Porto Velho - RO
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="date-grid">
+
+                    <div class="field">
+
+                        <label for="dataRetirada">
+                            Data da retirada
+                        </label>
+
+                        <input
+                            id="dataRetirada"
+                            type="date"
+                            required
+                        >
+
+                    </div>
+
+                    <div class="field">
+
+                        <label for="horaRetirada">
+                            Horário
+                        </label>
+
+                        <input
+                            id="horaRetirada"
+                            type="time"
+                            value="09:00"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <div class="date-grid">
+
+                    <div class="field">
+
+                        <label for="dataDevolucao">
+                            Data da devolução
+                        </label>
+
+                        <input
+                            id="dataDevolucao"
+                            type="date"
+                            required
+                        >
+
+                    </div>
+
+                    <div class="field">
+
+                        <label for="horaDevolucao">
+                            Horário
+                        </label>
+
+                        <input
+                            id="horaDevolucao"
+                            type="time"
+                            value="09:00"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <button
+                    class="btn-search"
+                    type="submit"
+                >
+                    Buscar veículos
+
+                    <svg viewBox="0 0 24 24">
+                        <path d="M5 12h14"></path>
+                        <path d="M14 7l5 5-5 5"></path>
+                    </svg>
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     VANTAGENS
+========================================================= -->
+
+<section class="quick-section">
+
+    <div class="container quick-grid">
+
+        <div class="quick-item">
+
+            <div class="quick-icon">✓</div>
+
+            <div>
+                <strong>Frota completa</strong>
+                <span>Do econômico ao veículo especial</span>
+            </div>
+
+        </div>
+
+        <div class="quick-item">
+
+            <div class="quick-icon">✓</div>
+
+            <div>
+                <strong>Veículos revisados</strong>
+                <span>Segurança para sua locação</span>
+            </div>
+
+        </div>
+
+        <div class="quick-item">
+
+            <div class="quick-icon">✓</div>
+
+            <div>
+                <strong>Pagamento flexível</strong>
+                <span>Pix, cartão ou na retirada</span>
+            </div>
+
+        </div>
+
+        <div class="quick-item">
+
+            <div class="quick-icon">✓</div>
+
+            <div>
+                <strong>Atendimento em Rondônia</strong>
+                <span>Ouro Preto e Porto Velho</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     FROTA
+========================================================= -->
+
+<section class="fleet-section section" id="frota">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div>
+
+                <span class="section-label">
+                    NOSSOS GRUPOS DE LOCAÇÃO
+                </span>
+
+                <h2>
+                    Escolha o veículo ideal.
+                </h2>
+
+                <p>
+                    Valores, parcelamentos e condições são ilustrativos
+                    para apresentação do projeto.
+                </p>
+
+            </div>
+
+            <div class="demo-badge">
+                <span></span>
+                Protótipo comercial
+            </div>
+
+        </div>
+
+
+        <div class="filters">
+
+            <button
+                class="filter active"
+                data-filter="todos"
+                type="button"
+            >
+                Todos
+            </button>
+
+            <button
+                class="filter"
+                data-filter="carro"
+                type="button"
+            >
+                Carros
+            </button>
+
+            <button
+                class="filter"
+                data-filter="pickup"
+                type="button"
+            >
+                Pick-ups
+            </button>
+
+            <button
+                class="filter"
+                data-filter="especial"
+                type="button"
+            >
+                Especiais
+            </button>
+
+        </div>
+
+
+        <div class="fleet-grid">
+
+
+<!-- =========================================================
+     GRUPO A
+========================================================= -->
+
+<article class="fleet-card" data-category="carro">
+
+    <div class="fleet-image">
+
+        <div class="group-badge">
+            GRUPO A
+        </div>
+
+        <div class="type-badge">
+            Econômico
+        </div>
+
+        <img
+            src="static/img/carros/grupo-a.png"
+            alt="Argo, Polo ou Palio"
+        >
+
+    </div>
+
+    <div class="fleet-body">
+
+        <span class="fleet-category">
+            ECONÔMICOS COM AR
+        </span>
+
+        <h3>
+            Argo / Polo / Palio
+        </h3>
+
+        <p>
+            Economia, conforto e praticidade para
+            viagens e uso diário.
+        </p>
+
+        <div class="specs">
+            <span>5 lugares</span>
+            <span>Ar-condicionado</span>
+            <span>Econômico</span>
+        </div>
+
+        <div class="price-area">
+
+            <div>
+
+                <small>
+                    Diária a partir de
+                </small>
+
+                <strong>
+                    R$ 149
+                    <span>/dia</span>
+                </strong>
+
+            </div>
+
+            <div class="parcel">
+                <small>Cartão</small>
+                <strong>até 6x</strong>
+            </div>
+
+        </div>
+
+        <button
+            class="reserve-button"
+            type="button"
+            data-group="A"
+            data-name="Argo / Polo / Palio"
+            data-price="149"
+            data-image="static/img/carros/grupo-a.png"
+        >
+            Reservar agora →
+
+        </button>
+
+    </div>
+
+</article>
+
+
+<!-- =========================================================
+     GRUPO B
+========================================================= -->
+
+<article class="fleet-card" data-category="pickup">
+
+    <div class="fleet-image">
+
+        <div class="group-badge">
+            GRUPO B
+        </div>
+
+        <div class="type-badge">
+            Trabalho
+        </div>
+
+        <img
+            src="static/img/carros/grupo-b.png"
+            alt="Strada ou Saveiro"
+        >
+
+    </div>
+
+    <div class="fleet-body">
+
+        <span class="fleet-category">
+            PICK-UPS LEVES
+        </span>
+
+        <h3>
+            Strada / Saveiro
+        </h3>
+
+        <p>
+            Praticidade para trabalho,
+            pequenas cargas e uso profissional.
+        </p>
+
+        <div class="specs">
+            <span>Carga leve</span>
+            <span>Ar-condicionado</span>
+            <span>Trabalho</span>
+        </div>
+
+        <div class="price-area">
+
+            <div>
+
+                <small>
+                    Diária a partir de
+                </small>
+
+                <strong>
+                    R$ 219
+                    <span>/dia</span>
+                </strong>
+
+            </div>
+
+            <div class="parcel">
+                <small>Cartão</small>
+                <strong>até 6x</strong>
+            </div>
+
+        </div>
+
+        <button
+            class="reserve-button"
+            type="button"
+            data-group="B"
+            data-name="Strada / Saveiro"
+            data-price="219"
+            data-image="static/img/carros/grupo-b.png"
+        >
+            Reservar agora →
+        </button>
+
+    </div>
+
+</article>
+
+
+<!-- =========================================================
+     GRUPO C
+========================================================= -->
+
+<article class="fleet-card" data-category="pickup">
+
+    <div class="fleet-image">
+
+        <div class="group-badge">
+            GRUPO C
+        </div>
+
+        <div class="type-badge">
+            4x4
+        </div>
+
+        <img
+            src="static/img/carros/grupo-c.png"
+            alt="Hilux, Ranger ou S10"
+        >
+
+    </div>
+
+    <div class="fleet-body">
+
+        <span class="fleet-category">
+            PICK-UPS MÉDIAS 4X4
+        </span>
+
+        <h3>
+            Hilux / Ranger / S10
+        </h3>
+
+        <p>
+            Desempenho, conforto e capacidade
+            para cidade, estrada e trabalho.
+        </p>
+
+        <div class="specs">
+            <span>4x4</span>
+            <span>Cabine dupla</span>
+            <span>Premium</span>
+        </div>
+
+        <div class="price-area">
+
+            <div>
+
+                <small>
+                    Diária a partir de
+                </small>
+
+                <strong>
+                    R$ 349
+                    <span>/dia</span>
+                </strong>
+
+            </div>
+
+            <div class="parcel">
+                <small>Cartão</small>
+                <strong>até 10x</strong>
+            </div>
+
+        </div>
+
+        <button
+            class="reserve-button"
+            type="button"
+            data-group="C"
+            data-name="Hilux / Ranger / S10"
+            data-price="349"
+            data-image="static/img/carros/grupo-c.png"
+        >
+            Reservar agora →
+        </button>
+
+    </div>
+
+</article>
+
+
+<!-- =========================================================
+     GRUPO D
+========================================================= -->
+
+<article class="fleet-card" data-category="carro">
+
+    <div class="fleet-image">
+
+        <div class="group-badge">
+            GRUPO D
+        </div>
+
+        <div class="type-badge premium">
+            Premium
+        </div>
+
+        <img
+            src="static/img/carros/grupo-d.png"
+            alt="SW4 ou Trailblazer"
+        >
+
+    </div>
+
+    <div class="fleet-body">
+
+        <span class="fleet-category">
+            SUVs PREMIUM / EXECUTIVOS
+        </span>
+
+        <h3>
+            SW4 / Trailblazer
+        </h3>
+
+        <p>
+            Conforto superior para viagens,
+            executivos e grandes deslocamentos.
+        </p>
+
+        <div class="specs">
+            <span>SUV</span>
+            <span>Automático</span>
+            <span>Executivo</span>
+        </div>
+
+        <div class="price-area">
+
+            <div>
+
+                <small>
+                    Diária a partir de
+                </small>
+
+                <strong>
+                    R$ 399
+                    <span>/dia</span>
+                </strong>
+
+            </div>
+
+            <div class="parcel">
+                <small>Cartão</small>
+                <strong>até 10x</strong>
+            </div>
+
+        </div>
+
+        <button
+            class="reserve-button"
+            type="button"
+            data-group="D"
+            data-name="SW4 / Trailblazer"
+            data-price="399"
+            data-image="static/img/carros/grupo-d.png"
+        >
+            Reservar agora →
+        </button>
+
+    </div>
+
+</article>
+
+
+<!-- =========================================================
+     GRUPO E
+========================================================= -->
+
+<article class="fleet-card" data-category="carro">
+
+    <div class="fleet-image electric">
+
+        <div class="group-badge green">
+            GRUPO E
+        </div>
+
+        <div class="type-badge electric-tag">
+            Elétrico
+        </div>
+
+        <img
+            src="static/img/carros/grupo-e.png"
+            alt="Veículo elétrico BYD"
+        >
+
+    </div>
+
+    <div class="fleet-body">
+
+        <span class="fleet-category green-text">
+            ELÉTRICOS E HÍBRIDOS
+        </span>
+
+        <h3>
+            BYD ou similar
+        </h3>
+
+        <p>
+            Tecnologia, eficiência energética
+            e mobilidade sustentável.
+        </p>
+
+        <div class="specs">
+            <span>Elétrico</span>
+            <span>Automático</span>
+            <span>Tecnologia</span>
+        </div>
+
+        <div class="price-area">
+
+            <div>
+
+                <small>
+                    Diária a partir de
+                </small>
+
+                <strong>
+                    R$ 299
+                    <span>/dia</span>
+                </strong>
+
+            </div>
+
+            <div class="parcel">
+                <small>Cartão</small>
+                <strong>até 10x</strong>
+            </div>
+
+        </div>
+
+        <button
+            class="reserve-button"
+            type="button"
+            data-group="E"
+            data-name="BYD ou similar"
+            data-price="299"
+            data-image="static/img/carros/grupo-e.png"
+        >
+            Reservar agora →
+        </button>
+
+    </div>
+
+</article>
+
+
+<!-- =========================================================
+     GRUPO F
+========================================================= -->
+
+<article class="fleet-card" data-category="pickup">
+
+    <div class="fleet-image">
+
+        <div class="group-badge">
+            GRUPO F
+        </div>
+
+        <div class="type-badge">
+            Pesada
+        </div>
+
+        <img
+            src="static/img/carros/grupo-f.png"
+            alt="RAM 1500, 2500 ou 3500"
+        >
+
+    </div>
+
+    <div class="fleet-body">
+
+        <span class="fleet-category">
+            PICK-UPS PESADAS
+        </span>
+
+        <h3>
+            RAM 1500 / 2500 / 3500
+        </h3>
+
+        <p>
+            Potência para grandes demandas,
+            trabalho pesado e operações especiais.
+        </p>
+
+        <div class="specs">
+            <span>Alta potência</span>
+            <span>Carga pesada</span>
+            <span>Premium</span>
+        </div>
+
+        <div class="price-area">
+
+            <div>
+
+                <small>
+                    Diária a partir de
+                </small>
+
+                <strong>
+                    R$ 499
+                    <span>/dia</span>
+                </strong>
+
+            </div>
+
+            <div class="parcel">
+                <small>Cartão</small>
+                <strong>até 12x</strong>
+            </div>
+
+        </div>
+
+        <button
+            class="reserve-button"
+            type="button"
+            data-group="F"
+            data-name="RAM 1500 / 2500 / 3500"
+            data-price="499"
+            data-image="static/img/carros/grupo-f.png"
+        >
+            Reservar agora →
+        </button>
+
+    </div>
+
+</article>
+
+
+<!-- =========================================================
+     GRUPO G
+========================================================= -->
+
+<article class="fleet-card" data-category="especial">
+
+    <div class="fleet-image agro">
+
+        <div class="group-badge green">
+            GRUPO G
+        </div>
+
+        <div class="type-badge electric-tag">
+            Agro
+        </div>
+
+        <img
+            src="static/img/carros/grupo-g.png"
+            alt="Trator e maquinário agrícola"
+        >
+
+    </div>
+
+    <div class="fleet-body">
+
+        <span class="fleet-category green-text">
+            MAQUINÁRIO AGRÍCOLA E PESADO
+        </span>
+
+        <h3>
+            Tratores e equipamentos
+        </h3>
+
+        <p>
+            Soluções para propriedades rurais,
+            fazendas, obras e operações especiais.
+        </p>
+
+        <div class="specs">
+            <span>Agrícola</span>
+            <span>Pesado</span>
+            <span>Empresarial</span>
+        </div>
+
+        <div class="price-area">
+
+            <div>
+
+                <small>
+                    Valor ilustrativo
+                </small>
+
+                <strong>
+                    R$ 850
+                    <span>/dia</span>
+                </strong>
+
+            </div>
+
+            <div class="parcel">
+                <small>Condição</small>
+                <strong>sob consulta</strong>
+            </div>
+
+        </div>
+
+        <button
+            class="reserve-button"
+            type="button"
+            data-group="G"
+            data-name="Tratores e equipamentos"
+            data-price="850"
+            data-image="static/img/carros/grupo-g.png"
+        >
+            Solicitar orçamento →
+        </button>
+
+    </div>
+
+</article>
+
+
+<!-- =========================================================
+     GRUPO H
+========================================================= -->
+
+<article class="fleet-card" data-category="especial">
+
+    <div class="fleet-image boat">
+
+        <div class="group-badge">
+            GRUPO H
+        </div>
+
+        <div class="type-badge">
+            Embarcação
+        </div>
+
+        <img
+            src="static/img/carros/grupo-h.png"
+            alt="Barco e embarcação"
+        >
+
+    </div>
+
+    <div class="fleet-body">
+
+        <span class="fleet-category">
+            LOCAÇÃO DE EMBARCAÇÕES
+        </span>
+
+        <h3>
+            Barcos e embarcações
+        </h3>
+
+        <p>
+            Mobilidade aquática para transporte,
+            lazer e operações especiais.
+        </p>
+
+        <div class="specs">
+            <span>Embarcação</span>
+            <span>Transporte</span>
+            <span>Sob consulta</span>
+        </div>
+
+        <div class="price-area">
+
+            <div>
+
+                <small>
+                    Valor ilustrativo
+                </small>
+
+                <strong>
+                    R$ 1.200
+                    <span>/dia</span>
+                </strong>
+
+            </div>
+
+            <div class="parcel">
+                <small>Condição</small>
+                <strong>sob consulta</strong>
+            </div>
+
+        </div>
+
+        <button
+            class="reserve-button"
+            type="button"
+            data-group="H"
+            data-name="Barcos e embarcações"
+            data-price="1200"
+            data-image="static/img/carros/grupo-h.png"
+        >
+            Solicitar orçamento →
+        </button>
+
+    </div>
+
+</article>
+
+
+<!-- =========================================================
+     GRUPO I
+========================================================= -->
+
+<article class="fleet-card" data-category="especial">
+
+    <div class="fleet-image">
+
+        <div class="group-badge">
+            GRUPO I
+        </div>
+
+        <div class="type-badge">
+            Passageiros
+        </div>
+
+        <img
+            src="static/img/carros/grupo-i.png"
+            alt="Vans e ônibus"
+        >
+
+    </div>
+
+    <div class="fleet-body">
+
+        <span class="fleet-category">
+            TRANSPORTE DE PASSAGEIROS
+        </span>
+
+        <h3>
+            Vans e ônibus
+        </h3>
+
+        <p>
+            Transporte para equipes,
+            grupos, empresas, eventos e viagens.
+        </p>
+
+        <div class="specs">
+            <span>Passageiros</span>
+            <span>Equipes</span>
+            <span>Corporativo</span>
+        </div>
+
+        <div class="price-area">
+
+            <div>
+
+                <small>
+                    Diária a partir de
+                </small>
+
+                <strong>
+                    R$ 450
+                    <span>/dia</span>
+                </strong>
+
+            </div>
+
+            <div class="parcel">
+                <small>Cartão</small>
+                <strong>até 12x</strong>
+            </div>
+
+        </div>
+
+        <button
+            class="reserve-button"
+            type="button"
+            data-group="I"
+            data-name="Vans e ônibus"
+            data-price="450"
+            data-image="static/img/carros/grupo-i.png"
+        >
+            Reservar agora →
+        </button>
+
+    </div>
+
+</article>
+
+
+        </div>
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     COMO FUNCIONA
+========================================================= -->
+
+<section class="how-section section" id="como-funciona">
+
+    <div class="container">
+
+        <div class="center-heading">
+
+            <span class="section-label">
+                RESERVA DESCOMPLICADA
+            </span>
+
+            <h2>
+                Sua locação em poucos passos.
+            </h2>
+
+            <p>
+                Escolha a unidade, o período e o grupo de veículo.
+                A Masterlock cuida do restante.
+            </p>
+
+        </div>
+
+
+        <div class="steps-grid">
+
+            <div class="step-card">
+
+                <span class="step-number">
+                    01
+                </span>
+
+                <h3>
+                    Escolha o local
+                </h3>
+
+                <p>
+                    Informe onde deseja retirar e devolver o veículo.
+                </p>
+
+            </div>
+
+
+            <div class="step-card">
+
+                <span class="step-number">
+                    02
+                </span>
+
+                <h3>
+                    Escolha o veículo
+                </h3>
+
+                <p>
+                    Encontre o grupo ideal para sua necessidade.
+                </p>
+
+            </div>
+
+
+            <div class="step-card">
+
+                <span class="step-number">
+                    03
+                </span>
+
+                <h3>
+                    Informe seus dados
+                </h3>
+
+                <p>
+                    Preencha os dados básicos para a solicitação.
+                </p>
+
+            </div>
+
+
+            <div class="step-card">
+
+                <span class="step-number">
+                    04
+                </span>
+
+                <h3>
+                    Confirme a reserva
+                </h3>
+
+                <p>
+                    Revise as informações e confirme pelo atendimento.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     EMPRESAS
+========================================================= -->
+
+<section class="business-section section" id="empresas">
+
+    <div class="container business-grid">
+
+        <div class="business-copy">
+
+            <span class="section-label light">
+                MASTERLOCK EMPRESAS
+            </span>
+
+            <h2>
+                Sua empresa precisa de uma frota?
+            </h2>
+
+            <p>
+                Desenvolvemos soluções personalizadas para
+                terceirização de veículos, contratos corporativos,
+                operações agrícolas, obras e transporte de equipes.
+            </p>
+
+            <div class="business-list">
+
+                <div>
+                    <span>✓</span>
+                    Manutenção da frota em dia
+                </div>
+
+                <div>
+                    <span>✓</span>
+                    Redução de custos operacionais
+                </div>
+
+                <div>
+                    <span>✓</span>
+                    Atendimento personalizado
+                </div>
+
+                <div>
+                    <span>✓</span>
+                    Contratos personalizados
+                </div>
+
+            </div>
+
+            <button
+                id="btnProposta"
+                class="btn-company"
+                type="button"
+            >
+                Solicitar proposta empresarial
+            </button>
+
+        </div>
+
+
+        <div class="business-panel">
+
+            <span class="business-panel-label">
+                MASTERLOCK
+            </span>
+
+            <h3>
+                Soluções completas em mobilidade.
+            </h3>
+
+            <div class="business-stat">
+                <strong>9</strong>
+                <span>grupos de locação</span>
+            </div>
+
+            <div class="business-stat">
+                <strong>2</strong>
+                <span>unidades em Rondônia</span>
+            </div>
+
+            <div class="business-stat">
+                <strong>360°</strong>
+                <span>soluções para pessoas e empresas</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     CONTATO
+========================================================= -->
+
+<section class="contact-section section" id="contato">
+
+    <div class="container">
+
+        <div class="contact-box">
+
+            <div class="contact-copy">
+
+                <span class="section-label">
+                    FALE COM A MASTERLOCK
+                </span>
+
+                <h2>
+                    Precisa de uma proposta personalizada?
+                </h2>
+
+                <p>
+                    Consulte disponibilidade, contratos,
+                    veículos especiais e condições comerciais.
+                </p>
+
+            </div>
+
+
+            <div class="contact-grid">
+
+                <a
+                    href="#"
+                    class="contact-card"
+                    id="btnWhatsAppContato"
+                >
+
+                    <div class="contact-icon">
+                        ☎
+                    </div>
+
+                    <div>
+
+                        <small>
+                            WhatsApp
+                        </small>
+
+                        <strong>
+                            (69) 99928-7747
+                        </strong>
+
+                    </div>
+
+                </a>
+
+
+                <a
+                    href="mailto:paulo.moura@masterlock.com.br"
+                    class="contact-card"
+                >
+
+                    <div class="contact-icon">
+                        @
+                    </div>
+
+                    <div>
+
+                        <small>
+                            E-mail
+                        </small>
+
+                        <strong>
+                            paulo.moura@masterlock.com.br
+                        </strong>
+
+                    </div>
+
+                </a>
+
+
+                <div class="contact-card">
+
+                    <div class="contact-icon">
+                        ◎
+                    </div>
+
+                    <div>
+
+                        <small>
+                            Unidades
+                        </small>
+
+                        <strong>
+                            Porto Velho e Ouro Preto do Oeste
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer class="footer">
+
+    <div class="container footer-grid">
+
+        <div>
+
+            <a href="#inicio" class="logo footer-logo">
+
+                <div class="logo-text">
+                    Master<span>lock</span>
+                </div>
+
+            </a>
+
+            <p class="footer-description">
+                Soluções em locação de veículos e frotas.
+            </p>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <strong>
+                Navegação
+            </strong>
+
+            <a href="#inicio">
+                Início
+            </a>
+
+            <a href="#frota">
+                Veículos
+            </a>
+
+            <a href="#empresas">
+                Empresas
+            </a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <strong>
+                Unidades
+            </strong>
+
+            <span>
+                Ouro Preto do Oeste - RO
+            </span>
+
+            <span>
+                Porto Velho - RO
+            </span>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <strong>
+                Atendimento
+            </strong>
+
+            <span>
+                (69) 99928-7747
+            </span>
+
+            <span>
+                paulo.moura@masterlock.com.br
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <div class="container footer-bottom">
+
+        <span>
+            © 2026 Masterlock. Todos os direitos reservados.
+        </span>
+
+        <span>
+            Protótipo demonstrativo
+        </span>
+
+    </div>
+
+</footer>
+
+
+<!-- =========================================================
+     MODAL RESERVA
+========================================================= -->
+
+<div
+    class="modal-overlay"
+    id="modalReserva"
+>
+
+    <div class="reservation-modal">
+
+        <button
+            class="modal-close"
+            id="fecharReserva"
+            type="button"
+            aria-label="Fechar"
+        >
+            ×
+        </button>
+
+
+        <div class="reservation-header">
+
+            <span class="small-tag">
+                SUA RESERVA
+            </span>
+
+            <h2>
+                Finalizar solicitação
+            </h2>
+
+            <p>
+                Confira os dados e envie sua solicitação.
+            </p>
+
+        </div>
+
+
+        <div class="reservation-vehicle">
+
+            <div class="reservation-img">
+
+                <img
+                    id="modalImagem"
+                    src=""
+                    alt="Veículo selecionado"
+                >
+
+            </div>
+
+
+            <div>
+
+                <span
+                    class="selected-group"
+                    id="modalGrupo"
+                >
+                    GRUPO
+                </span>
+
+                <h3 id="modalNome">
+                    Veículo
+                </h3>
+
+                <small>
+                    Modelo sujeito à disponibilidade do grupo.
+                </small>
+
+            </div>
+
+        </div>
+
+
+        <div class="reservation-summary">
+
+            <div>
+
+                <small>
+                    Retirada
+                </small>
+
+                <strong id="resumoRetirada">
+                    -
+                </strong>
+
+            </div>
+
+
+            <div>
+
+                <small>
+                    Devolução
+                </small>
+
+                <strong id="resumoDevolucao">
+                    -
+                </strong>
+
+            </div>
+
+
+            <div>
+
+                <small>
+                    Período
+                </small>
+
+                <strong id="resumoDias">
+                    1 diária
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <div class="reservation-total">
+
+            <div>
+
+                <small>
+                    Valor estimado
+                </small>
+
+                <span>
+                    Valor demonstrativo
+                </span>
+
+            </div>
+
+            <strong id="resumoTotal">
+                R$ 0,00
+            </strong>
+
+        </div>
+
+
+        <form id="formReserva">
+
+            <div class="modal-grid">
+
+                <div class="field">
+
+                    <label for="clienteNome">
+                        Nome completo
+                    </label>
+
+                    <input
+                        type="text"
+                        id="clienteNome"
+                        placeholder="Digite seu nome"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="field">
+
+                    <label for="clienteTelefone">
+                        WhatsApp
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="clienteTelefone"
+                        placeholder="(69) 99999-9999"
+                        required
+                    >
+
+                </div>
+
+            </div>
+
+
+            <div class="field">
+
+                <label>
+                    Forma de pagamento
+                </label>
+
+
+                <div class="payment-select">
+
+                    <label class="payment-option">
+
+                        <input
+                            type="radio"
+                            name="pagamento"
+                            value="Pix"
+                            checked
+                        >
+
+                        <span>
+
+                            <strong>
+                                Pix
+                            </strong>
+
+                            <small>
+                                Confirmação rápida
+                            </small>
+
+                        </span>
+
+                    </label>
+
+
+                    <label class="payment-option">
+
+                        <input
+                            type="radio"
+                            name="pagamento"
+                            value="Cartão"
+                        >
+
+                        <span>
+
+                            <strong>
+                                Cartão
+                            </strong>
+
+                            <small>
+                                Parcelamento disponível
+                            </small>
+
+                        </span>
+
+                    </label>
+
+
+                    <label class="payment-option">
+
+                        <input
+                            type="radio"
+                            name="pagamento"
+                            value="Na retirada"
+                        >
+
+                        <span>
+
+                            <strong>
+                                Na retirada
+                            </strong>
+
+                            <small>
+                                Pagamento presencial
+                            </small>
+
+                        </span>
+
+                    </label>
+
+                </div>
+
+            </div>
+
+
+            <!-- BOTÃO CONFIRMAR -->
+
+            <button
+                class="btn-confirm"
+                type="submit"
+            >
+                Confirmar solicitação →
+
+            </button>
+
+
+            <!-- BOTÃO WHATSAPP -->
+
+            <button
+                class="btn-whatsapp-reserva"
+                id="btnWhatsAppReserva"
+                type="button"
+            >
+                Falar com a Masterlock pelo WhatsApp
+            </button>
+
+
+            <p class="prototype-text">
+                Protótipo demonstrativo. Nenhum pagamento
+                será processado nesta versão.
+            </p>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     MODAL SUCESSO
+========================================================= -->
+
+<div
+    class="modal-overlay"
+    id="modalSucesso"
+>
+
+    <div class="success-modal">
+
+        <div class="success-icon">
+            ✓
+        </div>
+
+        <span class="small-tag">
+            SOLICITAÇÃO REGISTRADA
+        </span>
+
+        <h2>
+            Solicitação concluída!
+        </h2>
+
+        <p>
+            Sua solicitação foi preparada com sucesso.
+            Na versão definitiva ela será registrada
+            automaticamente no sistema Masterlock.
+        </p>
+
+
+        <div class="success-code">
+
+            <small>
+                Protocolo
+            </small>
+
+            <strong id="protocoloReserva">
+                MST-000000
+            </strong>
+
+        </div>
+
+
+        <button
+            class="btn-confirm"
+            id="fecharSucesso"
+            type="button"
+        >
+            Concluir
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     JAVASCRIPT
+========================================================= -->
+
+<script src="static/js/script.js"></script>
+
+</body>
+</html>
